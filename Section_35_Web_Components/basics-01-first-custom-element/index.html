@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Web Components</title>
+    <style>
+      div {
+        border: 2px solid orange;
+      }
+      ah-tooltip {
+        border: 1px solid blue;
+        padding: 0.15rem;
+      }
+      .highlight {
+        /* background-color: orange; */
+        /* border: 2px solid blue; */
+      }
+    </style>
+    <script defer src="tooltip.js"></script>
+    <script defer src="confirm-link.js"></script>
+  </head>
+  <body>
+    <p>
+      <ah-tooltip class="important" text="Web Components is a set of standards.">
+        <span class="highlight">Web Component</span>
+      </ah-tooltip>
+      are awesome!
+    </p>
+    <ah-tooltip></ah-tooltip>
+    <div>This does not get the web component styles!</div>
+    <a is="ah-confirm-link" href="https://www.google.com">Google</a>
+  </body>
+</html>

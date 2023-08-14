@@ -1,0 +1,26 @@
+{
+  "name": "performance-01-starting-setup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:dev": "webpack-dev-server",
+    "build": "webpack",
+    "build:prod": "webpack --config webpack.config.prod.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": "> 0.5%",
+  "devDependencies": {
+    "@babel/core": "^7.22.10",
+    "@babel/preset-env": "^7.22.10",
+    "babel-loader": "^8.3.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "core-js": "^3.2.1",
+    "regenerator-runtime": "^0.13.11",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
